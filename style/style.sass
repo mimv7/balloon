@@ -1,3 +1,12 @@
+$color-grey:grey
+$color-brown-light:#BA8554
+$color-brown-darck:#A14F03
+$color-black:#000
+$color-white:#fff
+$box-shadow:(0px .4rem .4rem rgba (0, 0, 0, 0.5))
+  
+    
+    
 * , ::after, ::before
     margin: 0
     padding: 0
@@ -9,11 +18,11 @@ html
 
 body
     font-weight: 400
-    color: grey
+    color: $color-grey
     font-size: 1.6rem
     letter-spacing: .2rem
     padding: 5rem
-    background-color: white
+    background-color: $color-white
 
 .container
     background-color: #F7F7F7
@@ -73,7 +82,7 @@ body
         position: relative
         text-transform: uppercase
         text-decoration: none
-        color: grey
+        color: $color-grey
         padding: 1.5rem 4rem
         background-color: white
         border-radius: 5rem
@@ -83,7 +92,7 @@ body
         font-size: 2rem
         &:hover
             transform: translateY(-0.1rem)
-            box-shadow: (0px .4rem .4rem rgba (0, 0, 0, 0.5))
+            box-shadow: $box-shadow
             &::after
                 opacity: 0
                 transform: scale(1.6)
@@ -91,7 +100,7 @@ body
             
         &:active
             transform: translateY(.1rem)
-            box-shadow: (0px .4rem .4rem rgba (0, 0, 0, 0.1))
+            box-shadow: $box-shadow
         &::after
             content: ""
             background: white
