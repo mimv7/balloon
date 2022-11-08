@@ -9,11 +9,13 @@
   -webkit-background-clip: text;
   color: transparent;
   -webkit-transition: all 0.4s;
-  transition: all 0.4s; }
+  transition: all 0.4s;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden; }
   .title-secondary:hover {
     -webkit-transform: skewY(2deg) skewX(12deg) scale(1.01);
             transform: skewY(2deg) skewX(12deg) scale(1.01);
-    text-shadow: 0rem 0.4rem 0.4rem rgba(0, 0, 0, 0.25); }
+    text-shadow: 0rem 1.4rem 1.4rem rgba(0, 0, 0, 0.25); }
 
 *, ::after, ::before {
   margin: 0;
@@ -137,6 +139,9 @@ body {
 
 .section-about {
   padding-top: 8rem; }
+
+.title-secondary {
+  margin-bottom: 8rem; }
 
 @-webkit-keyframes BtnToUP {
   0% {
