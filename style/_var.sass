@@ -1,6 +1,23 @@
 $color-grey:grey
 $color-brown-light:#BA8554
-$color-brown-darck:#A14F03
+$color-brown-dark:#A14F03
 $color-black:#000
 $color-white:#fff
 $box-shadow:(0px .4rem .4rem rgba (0, 0, 0, 0.5))
+
+
+
+.title-secondary
+    text-align: center
+    font-size: 3.6rem
+    letter-spacing: 1rem
+    text-transform: uppercase
+    font-weight: 800
+    background: linear-gradient(90deg, rgba($color-brown-light, 0.7) 0.03%, rgba($color-brown-dark, 0.7) 99.94%,)
+    -webkit-background-clip: text
+    color: transparent
+    transition: all .4s
+    &:hover
+        transform: skewY(2deg) skewX(12deg) scale(1.01)
+        text-shadow: 0rem .4rem .4rem rgba($color-black, .25%)
+
