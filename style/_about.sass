@@ -18,4 +18,32 @@
     letter-spacing: .2rem
     font-weight: 400
 
+.composition
+    position: relative
+    &__photo
+        position: absolute
+        width: 55%
+        box-shadow: $box-shadow
+        border-radius: .5rem
+        transition: .5s
+        outline-offset: 1rem
+        &_n1
+            top: 10.7rem
+            left: 5rem
+            z-index: 12
+        &_n2
+            top: 5rem
+            right: 0
+            z-index: 11
+        &_n3
+            top: 0
+            left: 0
+            z-index: 10
+        &:hover
+            outline: 1rem solid $color-brown-light
+            transform: scale(1.5)
+            z-index: 20
+    &:hover &__photo:not(:hover)
+        transform: scale(.95)
+        
 
