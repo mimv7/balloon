@@ -5,6 +5,7 @@
     height: 50rem
     perspective: 150rem
     position: relative
+    
     &__side
         position: absolute
         top: 0
@@ -14,7 +15,7 @@
         transition: .6s all ease-out
         color: white
         &_front
-            background: yellow
+            background: $color-white
         &_back
             width: 100%
             background: green
@@ -30,6 +31,41 @@
         transform: rotateY(0deg)
     &__img
         height: 22rem
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%)
+        margin-bottom: 5rem
     
     &__title
+        position: absolute
+        font-size: 2.8rem
+        letter-spacing: .2rem
+        font-weight: 300
+        text-decoration: uppercase
+        text-align: right
+        top: 17rem
+        right: 0
+    &__span
+        background: linear-gradient(90deg, $color-brown-light, $color-brown-dark ) 
+        padding: 1rem 2rem .3rem 2rem
+        &_1
+        &_2
+            position: absolute
+            top: 3.4rem
+            right: 0
+            padding-bottom: 1rem
     &__descr
+        ul
+            list-style: none
+            margin: 0 auto
+            li
+                font-size: $font-size-p
+                color: $color-grey
+                text-align: center
+                margin-bottom: 2rem
+                span
+                    border-bottom: 1px $color-grey solid
+            &:not(:last-child)
+                margin-bottom: 2rem
+
+
+
+
