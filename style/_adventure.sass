@@ -1,0 +1,23 @@
+.section-adventure
+    margin-top: 5rem
+    padding: 21rem 0
+    background: url(../img/adventure.jpg) center center / cover no-repeat
+    clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 85%)
+
+
+.adventure-card
+    padding: 4rem
+    background-color: rgba($color-white,.8)
+    border-radius: .5rem
+    box-shadow: $box-shadow
+    transition: .5s
+    &:hover
+        transform: translateY(-1.5rem) scale(1.03)
+    &__icons
+        display: block
+        font-size: 6rem
+        background: linear-gradient(90deg, rgba($color-brown-light, 0.7) 0.03%, rgba($color-brown-dark, 0.7) 99.94%,)
+        -webkit-background-clip: text
+        color: transparent
+        margin: 0 auto
+        margin-bottom: 2rem
