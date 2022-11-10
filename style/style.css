@@ -263,7 +263,6 @@ body {
     top: 0;
     left: 0;
     height: 50rem;
-    width: 100%;
     -webkit-backface-visibility: hidden;
             backface-visibility: hidden;
     -webkit-transition: 0.6s all ease-out;
@@ -272,16 +271,19 @@ body {
     .card-tourse__side_front {
       background: yellow; }
     .card-tourse__side_back {
+      width: 100%;
       background: green;
       -webkit-transform: rotateY(180deg);
               transform: rotateY(180deg);
       background: linear-gradient(120deg, rgba(186, 133, 84, 0.7) 0.03%, rgba(161, 79, 3, 0.7) 99.94%); }
   .card-tourse:hover .card-tourse__side_front {
-    -webkit-transform: rotateY(180deg);
-            transform: rotateY(180deg); }
+    -webkit-transform: rotateY(-180deg);
+            transform: rotateY(-180deg); }
   .card-tourse:hover .card-tourse__side_back {
     -webkit-transform: rotateY(0deg);
             transform: rotateY(0deg); }
+  .card-tourse__img {
+    height: 22rem; }
 
 @-webkit-keyframes BtnToUP {
   0% {
