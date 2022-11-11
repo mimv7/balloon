@@ -1,11 +1,13 @@
 .section-tours
-    margin-top: 9rem
+    margin: 9rem auto 8rem
 
-.card-tourse
+.container-block
+    margin-bottom: 8rem
+
+.card-tours
     height: 50rem
     perspective: 150rem
     position: relative
-    
     &__side
         position: absolute
         top: 0
@@ -14,14 +16,16 @@
         backface-visibility: hidden
         transition: .6s all ease-out
         color: white
+        box-shadow: $box-shadow
+        border-radius: .5rem
         &_front
             background: $color-white
         &_back
             width: 100%
             background: green
             transform: rotateY(180deg)
-            background: linear-gradient(120deg, rgba($color-brown-light, 0.7) 0.03%, rgba($color-brown-dark, 0.7) 99.94%,)
-
+            background: linear-gradient(120deg, $color-brown-light, $color-brown-dark)
+            
 
 
 
@@ -65,6 +69,29 @@
                     border-bottom: 1px $color-grey solid
             &:not(:last-child)
                 margin-bottom: 2rem
+    &__backSide-box
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+
+    &__text
+        margin-bottom: 8rem
+        letter-spacing: .2rem
+        text-transform: uppercase
+        font-weight: 300
+        text-align: center
+        color: $color-white
+        &_1
+            font-size: $font-size-p
+            
+        &_2
+            font-size: 6rem
+            font-weight: 500
+.btn-tours
+    display: flex
+    margin: 0 auto
+    padding-bottom: 8rem
 
 
 
