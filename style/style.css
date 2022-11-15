@@ -363,7 +363,7 @@ body {
   padding-bottom: 8rem; }
 
 .section-reviews {
-  padding-top: 5rem;
+  padding: 5rem 0;
   position: relative; }
 
 .title-secondary_white {
@@ -383,7 +383,7 @@ body {
           box-shadow: 0px 0.4rem 0.4rem rgba(0, 0, 0, 0.3);
   margin: 0 auto;
   margin-bottom: 3rem;
-  padding: 5rem;
+  padding: 2rem;
   -webkit-transform: skewX(-20deg);
           transform: skewX(-20deg); }
   .reviews-card > * {
@@ -431,7 +431,21 @@ body {
             filter: blur(3px) brightness(60%); }
 
 .btn-tours__reviews {
-  margin-bottom: 5rem; }
+  margin-bottom: 1.8rem;
+  padding-bottom: 0; }
+
+.section-book {
+  padding: 10rem;
+  background: -webkit-gradient(linear, left top, right top, from(#BA8554), to(#A14F03));
+  background: linear-gradient(90deg, #BA8554, #A14F03); }
+
+.book {
+  height: 50rem;
+  background: linear-gradient(115deg, white 0%, white 53%, rgba(186, 133, 84, 0.5) 53%, rgba(161, 79, 3, 0.5) 100%), url(../img/bg-form.jpg) center/cover no-repeat;
+  -webkit-box-shadow: 0px 0.4rem 0.4rem rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 0.4rem 0.4rem rgba(0, 0, 0, 0.3);
+  border-radius: 0.5rem;
+  overflow: hidden; }
 
 @-webkit-keyframes BtnToUP {
   0% {
