@@ -11,6 +11,7 @@
 
 .form
     width: 65%
+    padding-left: 5rem
     &__group:not(:last-child)
         margin-bottom: 5rem
     &__input
@@ -24,6 +25,53 @@
         border-bottom: .2rem solid transparent
         border-radius: .5rem
         width: 55%
+
+    
+        &:focus
+            outline: none
+            border-bottom: .3rem solid #66d763
+            box-shadow: $box-shadow
+        &:focus:invalid
+            border-bottom: .3rem solid #fa0707
+    &__input:placeholder-shown + &__label
+        opacity: 0
+        visibility: hidden
+        transform: translateY(-3rem)
+
+    &__label
+        font-size: $font-size-p
+        letter-spacing: .2rem
+        font-weight: 400
+        display: block
+        margin-top: 1rem
+        margin-left: 1.5rem
+        transition: .7s all
+
+    &__group-radio
+        width: 30%
+        display: inline-block
+
+    &__label-radio
+        position: relative
+        cursor: pointer
+
+    &__button-radio
+        height: 3rem
+        width: 3rem
+        border-radius: 50%
+        border: .5rem solid $color-brown-dark
+        display: block
+        position: absolute
+        left: 0
+        top: -1rem
+        &::after
+            content: ""
+            display: block
+            height: 1.5rem
+            width: 1.5rem
+            border-radius: 50%
+            background: $color-brown-dark
+
 
 .title-form
     margin: 5rem 5rem 3rem
