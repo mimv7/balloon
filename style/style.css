@@ -440,8 +440,8 @@ body {
   background: linear-gradient(90deg, #BA8554, #A14F03); }
 
 .book {
-  height: 50rem;
-  background: linear-gradient(115deg, white 0%, white 53%, rgba(186, 133, 84, 0.5) 53%, rgba(161, 79, 3, 0.5) 100%), url(../img/bg-form.jpg) center/cover no-repeat;
+  height: 60rem;
+  background: linear-gradient(115deg, white 0%, white 25%, rgba(186, 133, 84, 0.5) 53%, rgba(161, 79, 3, 0.5) 100%), url(../img/bg-form.jpg) center/cover no-repeat;
   -webkit-box-shadow: 0px 0.4rem 0.4rem rgba(0, 0, 0, 0.3);
           box-shadow: 0px 0.4rem 0.4rem rgba(0, 0, 0, 0.3);
   border-radius: 0.5rem;
@@ -484,12 +484,13 @@ body {
     margin-left: 1.5rem;
     -webkit-transition: 0.7s all;
     transition: 0.7s all; }
-  .form__group-radio {
-    width: 30%;
-    display: inline-block; }
   .form__label-radio {
     position: relative;
     cursor: pointer; }
+  .form__group-radio {
+    width: 30%;
+    display: inline-block;
+    position: relative; }
   .form__button-radio {
     height: 3rem;
     width: 3rem;
