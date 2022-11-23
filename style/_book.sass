@@ -36,7 +36,7 @@
     &__input:placeholder-shown + &__label
         opacity: 0
         visibility: hidden
-        transform: translateY(-3rem)
+        transform: translateY(-2.2rem)
 
     &__label
         font-size: $font-size-p
@@ -52,12 +52,16 @@
     &__label-radio
         position: relative
         cursor: pointer
+        padding-left: 5rem
 
     &__group-radio
-        width: 30%
+        width: 40%
         display: inline-block
         position: relative
         
+    &__input-radio
+        display: none
+
 
 
     &__button-radio
@@ -67,8 +71,8 @@
         border: .5rem solid $color-brown-dark
         display: block
         position: absolute
-        left: 0
-        top: -1rem
+        left: 1rem
+        top: 0
         &::after
             content: ""
             display: block
@@ -76,6 +80,16 @@
             width: 1.5rem
             border-radius: 50%
             background: $color-brown-dark
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            opacity: 0
+            transition: .2s all
+
+    &__input-radio:checked ~ &__label-radio &__button-radio::after
+        opacity: 1
+        
 
 
 .title-form
