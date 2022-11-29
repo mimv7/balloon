@@ -1,0 +1,30 @@
+.row-icon
+    text-align: center
+    
+.footer
+    padding: 8rem
+    background: #333333
+
+    &__logo
+        width: 12rem
+    &__list
+        margin-top: 5rem
+        list-style: none
+        text-align: center
+    &__item
+        display: inline-block
+        &:not(:last-child)
+            margin-right: 5rem
+            
+    &__link
+        &:link, &:visited
+            color: $color-grey
+            text-decoration: none
+            text-transform: uppercase
+            display: inline-block
+            transition: .5s all
+        &:active
+
+        &:hover
+            transform: scale(1.2)
+

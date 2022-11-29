@@ -531,6 +531,33 @@ body {
 .title-form {
   margin: 5rem 5rem 3rem; }
 
+.row-icon {
+  text-align: center; }
+
+.footer {
+  padding: 8rem;
+  background: #333333; }
+  .footer__logo {
+    width: 12rem; }
+  .footer__list {
+    margin-top: 5rem;
+    list-style: none;
+    text-align: center; }
+  .footer__item {
+    display: inline-block; }
+    .footer__item:not(:last-child) {
+      margin-right: 5rem; }
+  .footer__link:link, .footer__link:visited {
+    color: grey;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    -webkit-transition: 0.5s all;
+    transition: 0.5s all; }
+  .footer__link:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2); }
+
 @-webkit-keyframes BtnToUP {
   0% {
     opacity: 0;
